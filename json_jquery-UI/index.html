@@ -11,10 +11,10 @@
 
 <body>
     <main>
-        <section id="titulo">
+        <section class="titulo">
             <h3>Formulário</h3>
         </section>
-
+        <!--Formulário-->
         <section id="formulario">
             <form>
                 <div id="form_name">
@@ -26,22 +26,40 @@
                     <label class="titulo_forms">Data de nascimento</label>
                     <input type="text" id="date">
                 </div>
-
+                <!--Botão -->
                 <div id="div_button">
                     <button id="button" type="button">Incluir</button>
                 </div>
             </form>
         </section>
-
-        <div id="erro_name" title="Mensagem de erro">
-            <p id="mensagem_erro_name"></p>
-        </div>
-
-        <div id="erro_date" title="Mensagem de erro">
-            <p id="mensagem_erro_date"></p>
-        </div>
-
-
+        <!--seção para as mensagens de erro que aparecem na tela-->
+        <section>
+            <div id="erro_name" title="Mensagem de erro">
+                <p id="mensagem_erro_name"></p>
+            </div>
+            <div id="erro_date" title="Mensagem de erro">
+                <p id="mensagem_erro_date"></p>
+            </div>
+        </section>
+        <!--Criação da Tabela-->
+        <section class="titulo">
+            <h3>Dados do Usuário</h3>
+        </section>
+        <section id="section_tabela">
+            <table id="table">
+                <tr>
+                    <th class="cabecalho">Nome</th>
+                    <th class="cabecalho">Data de nascimento</th>
+                </tr>
+            </table>
+        </section>
+        <!--Criação do Json-->
+        <section class="titulo">
+            <h3>JSON</h3>
+        </section>
+        <section id="textarea">
+            <textarea name="area_texto" id="area_texto" cols="30" rows="10"></textarea>
+        </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
